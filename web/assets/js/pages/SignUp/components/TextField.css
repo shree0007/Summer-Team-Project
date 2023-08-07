@@ -1,0 +1,11 @@
+.textfield label {
+    display: block;
+    margin-bottom: 3px;
+    text-transform: capitalize;
+    color: black;
+}
+
+.textfield input {
+    margin-bottom: 10px;
+    font-family: inherit;
+}

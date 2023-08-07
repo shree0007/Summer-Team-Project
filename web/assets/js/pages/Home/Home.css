@@ -1,0 +1,22 @@
+.home-content {
+    background-color: rgb(13, 12, 15); /* color picked from the banner img */
+}
+
+.homepage-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem 1rem;
+    margin-bottom: 3rem;
+    flex-flow: row wrap;
+}
+
+@media only screen and (max-width: 767px) {
+    .home {
+        min-height: 100%;
+    }
+
+    .home h2 {
+        font-size: 2rem;
+    }
+}

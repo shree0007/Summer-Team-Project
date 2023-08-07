@@ -1,0 +1,97 @@
+/* Shared styles */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--secondary-light-color);
+}
+
+/* nav ul li a:hover {
+    color: rgb(221, 129, 1);
+    transition: 0.3s ease;
+} */
+
+[aria-current='page'] {
+    color: var(--current-active-page-color);
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--secondary-light-color);
+}
+
+/* Mobile version styles */
+.mobile-nav {
+    position: fixed;
+    top: 100px;
+    right: 0;
+    width: 100%;
+    background-color: rgb(13, 12, 15);
+    padding: 2em 2em 2em 3em;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s ease, opacity 0.3s ease;
+}
+
+.mobile-nav.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Burger menu styles */
+@media only screen and (max-width: 700px) {
+    .burger {
+        display: block;
+    }
+
+    .burger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .burger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .mobile-nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav.active {
+        visibility: visible;
+    }
+}
+
+/* Desktop version styles */
+.desktop-nav {
+    display: none; /* Hide by default on mobile */
+}
+
+@media only screen and (min-width: 701px) {
+    /* Show desktop version */
+    .desktop-nav {
+        display: block;
+    }
+
+    /* Hide burger menu icon on desktop */
+    .burger {
+        display: none;
+    }
+}

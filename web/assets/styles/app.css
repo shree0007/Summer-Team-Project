@@ -1,0 +1,14 @@
+.loginform-container {
+    background-color: black;
+    color: var(--light-color);
+    padding-top: 100px;
+    height: 100vh;
+}
+
+.loginform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}

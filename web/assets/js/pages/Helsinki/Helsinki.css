@@ -1,0 +1,87 @@
+.helsinki-info {
+    margin-top: 100px;
+    margin-bottom: 40px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    padding-bottom: 20px;
+}
+
+.info-section {
+    display: flex;
+    justify-content: space-between;
+    width: 85vw;
+    box-shadow: 4px 8px 8px hsl(0deg 0% 0% / 0.38);
+}
+
+.info-section p {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+a.hsl-link {
+    color: black;
+}
+
+.info-text {
+    width: 50%;
+    margin: 0 1.5rem;
+}
+
+.info-text h2 {
+    color: var(--main-text-color);
+    margin: 20px 0;
+}
+
+.tram-img,
+.helsinki-img {
+    width: 500px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+@media (max-width: 1024px) {
+    .tram-img,
+    .helsinki-img {
+        width: 50%;
+    }
+
+    .info-section {
+        width: 90vw;
+    }
+}
+
+@media (max-width: 800px) {
+    .info-section {
+        flex-flow: row wrap;
+    }
+
+    .info-text {
+        width: 100%;
+    }
+
+    .tram-img,
+    .helsinki-img {
+        margin: 0 1.5rem;
+        width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    .info-text,
+    .tram-img,
+    .helsinki-img {
+        margin: 0;
+    }
+
+    .tram-img,
+    .helsinki-img {
+        width: 100%;
+    }
+}

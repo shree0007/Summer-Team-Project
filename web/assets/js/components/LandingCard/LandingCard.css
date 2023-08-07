@@ -1,0 +1,17 @@
+.landing-card {
+    text-align: left;
+    width: 320px;
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 1.5rem;
+    background-color: var(--light-color);
+}
+
+.landing-card h3,
+.landing-card p {
+    padding: 0.5rem;
+}
+
+.landing-card p {
+    line-height: 1.5;
+}
