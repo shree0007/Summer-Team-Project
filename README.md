@@ -18,7 +18,7 @@ The app also features an information page about Helsinki, and an FAQ page.
 ## Installation
 
 ```shell
-git clone https://github.com/jekku123/summer-project
+git clone https://github.com/shree0007/summer-project
 cd summer-project
 cd web
 composer install
